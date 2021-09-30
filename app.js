@@ -6,6 +6,14 @@ var outputDiv = document.querySelector("#output");
 var serverURL = " https://api.funtranslations.com/translate/yoda.json"
 
 function getTranslationURL(input) {
+    return serverURL + "?" + "text=" + input
+    
+}
+function errorHandler(error) {
+    console.log("error", error);
+alert("somethig is worng! Please do it again: ")
+
+}
  
 
 function clickHandler() {
